@@ -1,7 +1,11 @@
-import "./App.css";
+import React from 'react'
 
-function App() {
-	return <div className="text-2xl">Hello</div>;
+interface AppProps {
+	children: React.ReactNode;
+}
+
+function App({children}: AppProps) {
+	return <section className="bg-red-100 h-screen flex">{children}</section>;
 }
 
 export default App;
