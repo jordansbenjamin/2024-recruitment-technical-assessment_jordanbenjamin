@@ -1,26 +1,30 @@
 import UnilectivesLogo from "../assets/unilectives.svg";
-
-// type TUnilectiveLogo = HTMLElement & SVGAElement;
-
-// const unilectiveLogo: TUnilectiveLogo = unilectivesSvg;
+import AuthIcon from "../components/nav-icons/AuthIcon";
+import HistoryIcon from "../components/nav-icons/HistoryIcon";
+import ListArrIcon from "../components/nav-icons/ListArrIcon";
+import LogoutIcon from "../components/nav-icons/LogoutIcon";
+import ModeIcon from "../components/nav-icons/ModeIcon";
+import UserIcon from "../components/nav-icons/UserIcon";
 
 export default function Sidebar() {
 	return (
-		<aside className="bg-slate-100 w-[6.5rem] flex flex-col">
-			<img src={UnilectivesLogo} alt="" />
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				strokeWidth={1.5}
-				stroke="currentColor"
-				className="w-6 h-6">
-				<path
-					strokeLinecap="round"
-					strokeLinejoin="round"
-					d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
-				/>
-			</svg>
+		<aside className="bg-slate-100 w-[7rem] flex flex-col p-4 items-center justify-between">
+			<div className="flex flex-col gap-6 items-center">
+				<img src={UnilectivesLogo} alt="Unilectives logo" className="h-9 w-9 mt-2" />
+				<div className="border w-14 mt-1"></div>
+
+				<div className="flex flex-col gap-12 mt-2">
+					<HistoryIcon />
+					<AuthIcon />
+				</div>
+			</div>
+
+			<div className="flex flex-col items-center gap-12 mb-14">
+				<ListArrIcon />
+				<UserIcon />
+				<ModeIcon />
+				<LogoutIcon />
+			</div>
 		</aside>
 	);
 }
