@@ -1,9 +1,4 @@
-interface StarProps {
-	key?: number;
-	color?: string;
-	size?: number;
-	isFull?: boolean;
-}
+import { type StarProps } from "../../interfaces/propTypes";
 
 export default function Star({ size, color, isFull }: StarProps) {
 	return (

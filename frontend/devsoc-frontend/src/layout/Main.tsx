@@ -1,6 +1,6 @@
+import SearchInput from "../components/SearchInput";
+import SortDropdown from "../components/SortDropdown";
 import CourseCard from "../components/cards/CourseCard";
-import DownArrIcon from "../components/nav-icons/DownArrIcon";
-import SearchIcon from "../components/nav-icons/SearchIcon";
 import courses from '../data/courses.json'
 
 export default function Main() {
@@ -13,23 +13,8 @@ export default function Main() {
 			</section>
 
 			<section className="w-[62rem] flex flex-col gap-5">
-				{/* TODO: turn into component? */}
-				<div className="w-full p-2 border-2 border-blue-400 rounded-md relative flex items-center">
-					<SearchIcon />
-					<input
-						type="text"
-						placeholder="Search for a course e.g COMP1511"
-						className="bg-slate-50 placeholder-blue-400 placeholder:text-[.9rem] w-full ml-9 focus:outline-none"
-					/>
-				</div>
-
-				{/* TODO: turn into component? */}
-				<div className="">
-					<button className="bg-slate-50 px-3 py-2 border-[.09rem] border-gray-400 rounded-md flex gap-[7rem] shadow-md">
-						<span className="text-gray-400 text-[1rem]">Sort By</span>
-						<DownArrIcon />
-					</button>
-				</div>
+				<SearchInput/>
+				<SortDropdown/>
 			</section>
 
 			<section className="w-[62rem] flex flex-wrap gap-7">

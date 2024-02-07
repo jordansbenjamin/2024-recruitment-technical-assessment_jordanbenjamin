@@ -1,10 +1,6 @@
-import React from 'react'
+import { type AppProps } from "./interfaces/propTypes";
 
-interface AppProps {
-	children: React.ReactNode;
-}
-
-function App({children}: AppProps) {
+function App({ children }: AppProps) {
 	return <section className="bg-red-100 h-screen flex">{children}</section>;
 }
 

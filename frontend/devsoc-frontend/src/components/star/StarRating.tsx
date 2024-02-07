@@ -1,7 +1,7 @@
 import Star from "./Star";
 
 
-export default function StarRating({ maxRating = 5, color = "#B789E5", size = 26, rating = 3}) {
+export default function StarRating({ maxRating = 5, color = "#B789E5", size = 26, rating = 0}) {
 return (
 		<div className="flex items-center">
 			<div className="flex">

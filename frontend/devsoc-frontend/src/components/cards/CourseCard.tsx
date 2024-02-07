@@ -1,13 +1,6 @@
 import TermLabel from "../label/TermLabel";
 import StarRating from "../star/StarRating";
-
-interface CourseCardProps {
-	code: string;
-	title: string;
-	reviews: number;
-	stars: number;
-	terms: string[];
-}
+import { type CourseCardProps } from "../../interfaces/propTypes";
 
 export default function CourseCard({ code, title, reviews, stars, terms }: CourseCardProps) {
 	return (
@@ -23,9 +16,10 @@ export default function CourseCard({ code, title, reviews, stars, terms }: Cours
 				<p className="font-light text-sm">{title}</p>
 			</div>
 
-			{/* TODO: abstract to own component */}
 			<div className="mt-12 flex gap-2">
-				{terms.map((term) => <TermLabel term={term}/>)}
+				{terms.map((term) => (
+					<TermLabel term={term} />
+				))}
 			</div>
 		</article>
 	);
