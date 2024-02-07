@@ -8,7 +8,7 @@ import UserIcon from "../components/nav-icons/UserIcon";
 
 export default function Sidebar() {
 	return (
-		<aside className="bg-slate-100 w-[7rem] flex flex-col p-4 items-center justify-between">
+		<aside className="bg-slate-100 w-[5rem] flex flex-col p-4 items-center justify-between">
 			<div className="flex flex-col gap-6 items-center">
 				<img src={UnilectivesLogo} alt="Unilectives logo" className="h-9 w-9 mt-2" />
 				<div className="border w-14 mt-1"></div>

@@ -1,4 +1,4 @@
-export default function ListArrIcon() {
+export default function SearchIcon() {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -6,11 +6,11 @@ export default function ListArrIcon() {
 			viewBox="0 0 24 24"
 			strokeWidth={1.5}
 			stroke="currentColor"
-			className="w-6 h-6 rotate-90 hover:scale-125 transition-all cursor-pointer">
+			className="w-6 h-6 absolute text-blue-400 left-2">
 			<path
 				strokeLinecap="round"
 				strokeLinejoin="round"
-				d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"
+				d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
 			/>
 		</svg>
 	);

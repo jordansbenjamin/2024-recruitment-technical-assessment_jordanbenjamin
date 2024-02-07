@@ -6,7 +6,7 @@ export default function AuthIcon() {
 			viewBox="0 0 24 24"
 			strokeWidth={1.5}
 			stroke="currentColor"
-			className="w-7 h-7 hover:scale-125 transition-all cursor-pointer">
+			className="w-6 h-6 hover:scale-125 transition-all cursor-pointer">
 			<path
 				strokeLinecap="round"
 				strokeLinejoin="round"
