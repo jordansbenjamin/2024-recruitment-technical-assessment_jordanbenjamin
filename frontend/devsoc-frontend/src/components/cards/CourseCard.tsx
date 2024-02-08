@@ -17,8 +17,8 @@ export default function CourseCard({ code, title, reviews, stars, terms }: Cours
 			</div>
 
 			<div className="mt-12 flex gap-2">
-				{terms.map((term) => (
-					<TermLabel term={term} />
+				{terms.map((term, i) => (
+					<TermLabel key={i} term={term} />
 				))}
 			</div>
 		</article>
