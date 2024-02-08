@@ -5,11 +5,11 @@ import './index.css'
 import Sidebar from './layout/Sidebar.tsx'
 import Main from './layout/Main.tsx'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App>
-      <Sidebar/>
-      <Main/>
-    </App>
-  </React.StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById("root")!).render(
+	<React.StrictMode>
+		<App>
+			<Sidebar />
+			<Main />
+		</App>
+	</React.StrictMode>
+);

@@ -16,3 +16,9 @@ export interface StarProps {
 	size?: number;
 	isFull?: boolean;
 }
+
+export interface ModalState {
+	isOpen: boolean;
+	openModal: () => void;
+	closeModal: () => void;
+}

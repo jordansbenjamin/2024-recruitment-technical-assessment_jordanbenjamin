@@ -4,17 +4,20 @@ import SortDropdown from "../components/SortDropdown";
 import CourseCard from "../components/cards/CourseCard";
 import courses from "../data/courses.json";
 import { getRandColor } from "../utils/getRandColor";
+import useModalStore from "../store/modalStore";
+import Modal from "../components/modal/Modal";
 
 export default function Main() {
 	const [color, setColor] = useState("rgb(59,130,246)");
+	const {isOpen} = useModalStore();
 
 	return (
-		<main className="bg-slate-50 w-full flex flex-col items-center gap-12">
+		<main className="bg-slate-50 w-full flex flex-col items-center gap-12 relative">
 			<section className="w-[62rem] mt-6">
 				<h2 className="text-gray-600 mb-[-.7rem]">DevSoc presents</h2>
 				<h1
 					className={`text-[5.5rem] font-bold cursor-pointer`}
-					style={{color}}
+					style={{ color }}
 					onClick={() => {
 						console.log("Clicked");
 						setColor(getRandColor());
@@ -41,6 +44,8 @@ export default function Main() {
 					/>
 				))}
 			</section>
+
+			{isOpen && <Modal/>}
 		</main>
 	);
 }
