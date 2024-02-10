@@ -12,7 +12,7 @@ You should be able to clone this repo with no worries.
 
 The actual project repo is under the `frontend` directory called `devsoc-frontend`.
 
-The usual `npm i` and `npm run dev` should work too!
+The usual `npm i` and `npm run dev` should work too! fyi, I used vite as my build tool.
 
 If there are any issues, please contact me on discord: `jordansbenjamin` or my email `jordansbenjamin@gmail.com`
 
