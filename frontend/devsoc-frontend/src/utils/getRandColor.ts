@@ -1,5 +1,4 @@
 export function getRandColor() {
-	// console.log(`rgb(${getRandInt()},${getRandInt()},${getRandInt()})`);
 	return `rgb(${getRandInt()},${getRandInt()},${getRandInt()})`;
 }
 
