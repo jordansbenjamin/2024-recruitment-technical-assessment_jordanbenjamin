@@ -13,7 +13,7 @@ export default function Main() {
 
 	return (
 		<main className="bg-slate-50 w-full flex flex-col items-center gap-12 relative">
-			<section className="w-[62rem] mt-6">
+			<section className="w-[69rem] mt-6">
 				<h2 className="text-gray-600 mb-[-.7rem]">DevSoc presents</h2>
 				<h1
 					className={`text-[5.5rem] font-bold cursor-pointer`}
@@ -24,15 +24,15 @@ export default function Main() {
 					}}>
 					unilectives
 				</h1>
-				<p className="font-bold mt-[-.6rem] text-lg">Your one-stop shop for UNSW course and elective reviews.</p>
+				<p className="font-extrabold mt-[-.6rem] text-lg">Your one-stop shop for UNSW course and elective reviews.</p>
 			</section>
 
-			<section className="w-[62rem] flex flex-col gap-5">
+			<section className="w-[69rem] flex flex-col gap-5">
 				<SearchInput />
 				<SortDropdown />
 			</section>
 
-			<section className="w-[62rem] flex flex-wrap gap-7">
+			<section className="w-[69rem] grid grid-cols-3 grid-rows-2 gap-12">
 				{courses.map((course) => (
 					<CourseCard
 						key={course.course_code}
@@ -45,7 +45,7 @@ export default function Main() {
 				))}
 			</section>
 
-			{isOpen && <Modal/>}
+			{isOpen && <Modal />}
 		</main>
 	);
 }
